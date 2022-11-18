@@ -1,0 +1,59 @@
+
+
+### CONFIG FILE ##########################################
+
+
+### Seconds to sleep between fetching of calendar
+### Don't set this to low! There are request limitations  
+### and you don't want to 503 your calendar (which I have done.).
+config:
+  sleep_time: 20
+
+
+
+### Localization
+
+local:
+  locale: "sv_SE.UTF-8"
+  timezone: "Europe/Stockholm"
+
+
+
+### Run from local machine or production server
+### Change paths to directories below under paths 
+### I use this when I'm developing on my local machine
+### and then swtich to prod on the uploaded code
+### on my Raspberry Pi.
+
+run_fromo_device:
+  local_or_prod: "local" # local or prod
+
+# Paths to directories
+
+# local machine absolute path
+path_local:
+  localpath: "/Users/micke/code/_LIVE/roomcal/web/kl.php"
+  localpath2: "/Users/micke/code/_LIVE/roomcal/web/day.php"
+
+# prod remote absolute path
+path_prod:
+  localpath: "/home/micke/code/roomcal/web/kl.php"
+  localpath2: "/home/micke/code/roomcal/web/day.php"
+
+
+
+### SFTP 
+
+sftp_user:
+  remote_server_path: "/var/www/room/b212a/"
+  username: www-user
+  password: password123
+  host: 11.22.33.44
+  port: 22
+
+
+
+### URL to iCloud Calendar or Google Calendar
+
+urlcalendar:
+    link_url: https://p31-caldav.icloud.com/published/2/OTI...................pZcA8
