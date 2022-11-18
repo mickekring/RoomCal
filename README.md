@@ -22,6 +22,9 @@ __I'm not a coder!__ I just like to create stuff. :)
 
 If you'd like to run it yourself, there are some things to modify. I'll try to make this short and sweet.
 
+#### Web server with SFTP access
+The script uploads your html files to your web server via SFTP.
+
 #### Public calendar
 You need a public iCloud or Google calendar. After that, copy the adress and paste in the config.yml (see below). If you use an iCloud calendar, replace webdav:// for https://
 
