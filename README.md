@@ -33,9 +33,9 @@ pytz, paramiko, pyyaml, datetime, icalevents, locale, signal, time
 
 #### Files
 * Download all files
-* Open config.yml
+* Open __config.yml__
   - Change the settings, such as localization, paths to directories, address to your calendar and more
-* Open main.py
+* Open __main.py__
   - __check_time_to_run()__ | a function that sets when the script can actually run. Change the variables __off_hours__ and __off_days__ so that the script runs when you want it to
   - __calendar()__ | is the main function that queries your calendar. You set your keywords in the if-statements about line 140-190.
 
@@ -46,6 +46,7 @@ A tip is to comment out the __file_upload()__ function in the __Main()__ loop at
 * Open __index.php__ in the folder __upload_to_webserver__ directory
   - Change headlines and static text
   - Change the paths so that they point to your files on your server
+  - If you don't want the video background of me waving to y'all, you can change that too. :)
   
 * Upload the files in __upload_to_webserver__ to your webserver
 
