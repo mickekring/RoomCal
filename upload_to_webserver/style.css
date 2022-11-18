@@ -1,0 +1,332 @@
+body {
+	background-color: #111;
+	font-family: 'Poppins', sans-serif;
+}
+
+p {
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+
+/* ############## DIVS ############## */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.row {
+    margin: 0px;
+}
+
+.col-md-5.divtall {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+}
+
+.col-md-7.divtall {
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+}
+
+.div1-half-top {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div1-half {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background: #222122;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.div1-half-bottom {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 340px;
+    border-radius: 20px;
+    position: relative;
+    background: #222122;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.divnn {
+    position: relative;
+}
+
+.divprofile {
+    background: #111111a3;
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6 {
+    color: #fff;
+    display: table-cell;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    float: left;
+    height: 94vh;
+    border-radius: 20px;
+    position: relative;
+    background: #222122;
+}
+
+/* ############ FONTS ############ */
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+h1.clock {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+h1.available {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+h2.calheading {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 2px;
+    margin-bottom: 16px;
+}
+
+h4 {
+    margin-top: 16px;
+    margin-bottom: 26px;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.div1 h1, .div2 h1, .div3 h1, .div4 h1, .div5 h1, .div6 h1 {
+    font-size: 54px;
+    font-weight: 400;
+    margin-top: 18px;
+    margin-bottom: 0px;
+}
+
+th.first p.calfontgreen {
+    border-top-left-radius: 14px;
+    overflow: hidden;
+}
+
+th.third p.calfontgreen {
+    border-bottom-right-radius: 14px;
+    overflow: hidden;
+}
+
+th.first p.calfontred {
+    border-top-left-radius: 14px;
+    overflow: hidden;
+}
+
+th.third p.calfontred {
+    border-bottom-right-radius: 14px;
+    overflow: hidden;
+}
+
+th.first p.calfont {
+    border-top-left-radius: 14px;
+    overflow: hidden;
+}
+
+th.third p.calfont {
+    border-bottom-right-radius: 14px;
+    overflow: hidden;
+}
+
+span.testing {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0px;
+}
+
+p.calfont {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    background: #111;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -2px;
+    height: 84px;
+}
+
+p.calfontgreen {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    background: green;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -2px;
+    height: 84px;
+}
+
+p.calfontred {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    background: red;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -2px;
+    height: 84px;
+}
+
+p.location {
+    font-size: 20px;
+    line-height: 48px;
+    font-weight: 600;
+    background: green;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: -2px;
+}
+
+p.meta {
+	font-size: 8px;
+    background-color: #222;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 3px;
+    display: inline;
+}
+
+p.available {
+    position: absolute;
+    top: 46px;
+    right: 20px;
+    background: #971516;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    border-radius: 6px;
+}
+
+p.windows {
+    position: absolute;
+    top: 96px;
+    right: 20px;
+    background: #971516;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    border-radius: 6px;
+}
+
+/* ########### VIDEO & IMAGES ############ */
+
+#videoBG {
+    position:relative;
+    height: 130%;
+    bottom: 70px;
+    left: -170px;
+   z-index: -1;
+    overflow: hidden;
+}
+
+.div3 img {
+
+    width: 246px;
+    margin-top: 15px;
+}
+
+.div4 img {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    height: 150px;
+}
+
+/* ########### MISC ########### */
+
+.progress {
+	height: 40px;
+	margin-top: 18px;
+	background-color: #333333eb;
+}
+
+.progress-bar {
+	font-size: 18px;
+    line-height: 42px;
+}
+
+.progress-bar-warning {
+    background-color: #ffa500;
+}
+
+.progress-bar-danger {
+    background-color: #971516;
+}
+
+th.first {
+    width: 2%;
+}
+
+th.second {
+    width: 23%;
+}
+
+th.third {
+    width: 39%;
+}
