@@ -17,19 +17,19 @@ conf = yaml.load(open('config.yml'), Loader=yaml.FullLoader)
 # Set locale to SE 
 locale.setlocale(locale.LC_ALL, conf['local']['locale'])
 
-# Init Color HTML
-style_color_html = "green"
-style_message_html ="ledigt"
-
 # Colors
 red = "red"
 green = "green"
 blue = "#44aabd"
 grey = "#222122"
 
+# Init Color HTML
+style_color_html = green
+style_message_html ="ledigt" # translation EN "available"
+
 # Init Messages HTML
-status_calender_now = "Kalendern är tom"
-statusDay = "Kalendern är tom"
+status_calender_now = "Kalendern är tom" # translation EN "no events in calendar"
+statusDay = "Kalendern är tom" # translation EN "no events in calendar"
 
 # Paths and directories if running local or production
 # Setup in config.yml
