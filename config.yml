@@ -25,7 +25,7 @@ local:
 ### and then swtich to prod on the uploaded code
 ### on my Raspberry Pi.
 
-run_fromo_device:
+run_from_device:
   local_or_prod: "local" # local or prod
 
 # Paths to directories
