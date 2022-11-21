@@ -24,8 +24,8 @@ blue = "#44aabd"
 grey = "#222122"
 
 # Init Color HTML
-style_color_html = green
-style_message_html ="ledigt" # translation EN "available"
+style_color_html = grey
+style_message_html ="INGEN INNE" # translation EN "no one in"
 
 # Init Messages HTML
 status_calender_now = "Kalendern är tom" # translation EN "no events in calendar"
@@ -40,20 +40,6 @@ nowEvent = 1
 
 
 
-# Timeout
-
-class TimeOutException(Exception):
-	pass
-
-def alarm_handler(signum, frame):
-	print("ALARM signal received")
-	raise TimeOutException()
-
-signal.signal(signal.SIGALRM, alarm_handler)
-signal.alarm(30)
-
-
-
 # Checks if script should be running or not
 
 def check_time_to_run(hour, day):
@@ -62,6 +48,8 @@ def check_time_to_run(hour, day):
 	
 	off_hours = ["18", "19", "20", "21", "22", "23", "24", "00", "01", "02", "03", "04", "05", "06"]
 	off_days = ["Lördag", "Söndag"]
+	#off_hours = []
+	#off_days = []
 
 	if hour in off_hours or day in off_days:
 		print("Script outside running hours / days")
@@ -324,18 +312,16 @@ def Main():
 
 			time_available()
 			file_upload()
-			signal.alarm(30)
 
 			if go_live == 1:
 			
 				try:
 					calendar()
-				except TimeOutException as ex:
-					print(ex)
+				except:	
+					pass
 			else:
 				pass
 
-			signal.alarm(0)
 			file_upload()
 			time.sleep(conf['config']['sleep_time'])
 
